@@ -2,7 +2,7 @@ package com.Borman.Quotes.models.enums;
 
 public enum Category {
 
-    Funny("Funny 2.0"),
+    Funny("Funny"),
     Love("Love"),
     Wise("Wise");
 

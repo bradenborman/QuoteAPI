@@ -1,18 +1,20 @@
 package com.Borman.Quotes.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+@JsonPropertyOrder({ "firstName", "lastName", "occupation"})
 public class Author {
 
     private String firstName;
-    private String LastName;
+    private String lastName;
     private String occupation;
 
     public Author() { }
 
     public Author(String firstName, String lastName, String occupation) {
         this.firstName = firstName;
-        LastName = lastName;
+        this.lastName = lastName;
         this.occupation = occupation;
     }
 
@@ -26,11 +28,11 @@ public class Author {
     }
 
     public String getLastName() {
-        return LastName;
+        return lastName;
     }
 
     public void setLastName(String lastName) {
-        LastName = lastName;
+        this.lastName = lastName;
     }
 
     public String getOccupation() {

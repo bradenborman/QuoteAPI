@@ -1,7 +1,9 @@
 package com.Borman.Quotes.models;
 
 import com.Borman.Quotes.models.enums.Category;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+@JsonPropertyOrder({ "author", "value", "category"})
 public class Quote {
 
     private String value;
