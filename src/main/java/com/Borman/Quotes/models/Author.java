@@ -3,6 +3,8 @@ package com.Borman.Quotes.models;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+import javax.validation.constraints.Min;
+
 @JsonPropertyOrder({ "firstName", "lastName", "occupation"})
 public class Author {
 
@@ -17,7 +19,6 @@ public class Author {
         this.lastName = lastName;
         this.occupation = occupation;
     }
-
 
     public String getFirstName() {
         return firstName;

@@ -1,8 +1,12 @@
 package com.Borman.Quotes;
 
+import com.Borman.Quotes.controllers.api;
 import com.Borman.Quotes.models.Author;
 import com.Borman.Quotes.models.Quote;
 import com.Borman.Quotes.models.enums.Category;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,6 +18,7 @@ class QuoteFactory {
 
         Author author = new Author("Brent", "Theonen", "Software Developer");
         Author author2 = new Author("Braden", "Borman", "Software Developer");
+
 
         List<Quote> allQuotes = new ArrayList<>();
         Quote quote = new Quote();
